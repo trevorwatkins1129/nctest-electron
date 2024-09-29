@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <webview class="webview" useragent="NCTest/1.0 ChromeApp Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 " src="https://data.ncsu.edu/nctest/Destination.html" style="width:1920px;height:1080px"></webview>
+    </body>
+</html>
+<script>
+const webview = document.querySelector('webview')
+webview.addEventListener('dom-ready', () => {
+    webview.setUserAgent("NCTest/1.0 ChromeApp Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 ")
+})
+</script>
